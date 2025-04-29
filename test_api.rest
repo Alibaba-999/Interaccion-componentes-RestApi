@@ -1,0 +1,31 @@
+### Obtener información de la API
+GET http://localhost:5000/info
+Content-Type: application/json
+
+###
+
+### Agregar un usuario nuevo
+POST http://localhost:5000/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "David Johnson",
+  "correo": "DavidJ@example.com"
+}
+
+###
+
+### Agregar otro usuario
+POST http://localhost:5000/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Rebecca Smith",
+  "correo": "RebeccaS@example.com"
+}
+
+###
+
+### Obtener la lista de usuarios almacenados
+GET http://localhost:5000/usuarios
+Content-Type: application/json
